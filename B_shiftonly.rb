@@ -8,7 +8,7 @@
 def count_divide_by_two(n)
   numbers = []
   n.times do
-    numbers << rand(2..(10**9))
+    numbers << gets.to_i
   end
   p numbers
   count = 0
@@ -25,6 +25,21 @@ def count_divide_by_two(n)
   end
 end
 
+def shift_only(numbers)
+  count = 0 
+  while numbers.all?{|num| num.even? }
+    numbers = numbers.map{|num| num/2}
+    count += 1
+  end
+  p count
+end
+
+
 p "個数Nを指定してください（200未満の整数）"
 n = gets.to_i
-count_divide_by_two(n)
+# count_divide_by_two(n)
+
+p "数字を#{n}個入力してください。"
+numbers = gets.chomp.split.map(&:to_i)
+
+shift_only(numbers)
