@@ -1,12 +1,14 @@
 def product_even?(a, b)
   product = a * b
   if product %  2 == 0
-    p "even"
+    puts 'Even'
   else
-    p "odd"
+    puts 'Odd'
   end 
 end
 
-p '数字を二つ入力してください 例）a, b'
-a, b = gets.chomp.split.map(&:to_i)
+
+input = gets.split.map(&:to_i)
+a,b = input
+
 product_even?(a, b) 

@@ -7,13 +7,12 @@ def two_anagrams(s, t)
   t_dash = t.split('').sort.reverse.join('')
   st_array = [s_dash, t_dash].sort
   if st_array[0] == s_dash
-    p 'yes'
+    puts 'Yes'
   else
-    p 'no'
+    puts 'No'
   end
 end
 
-p '二つの文字列を入力してください'
 s = gets.chomp
 t = gets.chomp
 two_anagrams(s, t)

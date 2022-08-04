@@ -10,6 +10,4 @@ def how_many_one(str)
   p count
 end
 
-p "３桁の数字を入力してください"
-
 how_many_one(gets.chomp)
