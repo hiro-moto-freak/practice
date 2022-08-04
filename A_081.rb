@@ -12,4 +12,4 @@ end
 
 p "３桁の数字を入力してください"
 
-how_many_one(gets)
+how_many_one(gets.chomp)
