@@ -35,11 +35,8 @@ def shift_only(numbers)
 end
 
 
-p "個数Nを指定してください（200未満の整数）"
 n = gets.to_i
+numbers = gets.split.map(&:to_i)
+
 # count_divide_by_two(n)
-
-p "数字を#{n}個入力してください。"
-numbers = gets.chomp.split.map(&:to_i)
-
 shift_only(numbers)
