@@ -14,6 +14,7 @@ ans2 = []
 ans.each do |a|
   n.times do |i|
     ans2 << a.rotate(i).join.to_i
+    ans2 << a.reverse.rotate(i).join.to_i
   end
 end 
 
