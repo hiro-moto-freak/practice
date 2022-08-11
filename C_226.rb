@@ -16,7 +16,7 @@ required_times << times[n-1]
 required_nums = nums[n-1]
 
 if required_nums == nil
-  puts times[n-1]
+  puts required_times.sum
   return
 end
 
