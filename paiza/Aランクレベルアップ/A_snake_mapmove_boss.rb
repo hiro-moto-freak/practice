@@ -38,7 +38,8 @@ loop do
   if ny <= h -1 && ny >= 0 && nx <= w - 1 && nx >= 0 && field[ny][nx] != "#" && field[ny][nx] != "*"
     field[ny][nx] = "*"
   else
-    break
+    puts field
+    return
   end
 
   now += 1
@@ -48,5 +49,3 @@ loop do
     return
   end 
 end
-
-puts field
