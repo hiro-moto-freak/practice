@@ -7,7 +7,7 @@ ans = 0
 
 loop do
   if sum <= m
-    ans = [0, last - first + 1].max
+    ans = [ans, last - first + 1].max
     break if last == n - 1
     last += 1
     sum += nums[last]
