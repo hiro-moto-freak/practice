@@ -1,3 +1,3 @@
 [submodule "practice"]
 	path = practice
-	url = https://github.com/hiro-moto-freak/practice
+	url = git@github.com:hiro-moto-freak/practice.git
