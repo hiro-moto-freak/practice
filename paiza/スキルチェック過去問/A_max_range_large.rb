@@ -22,7 +22,7 @@ sum[0] = a[0]
 
 (1..n-1).each do |num|
   sum[num] = sum[num - 1] + a[num]
-end 
+end  
 
 max_visitor = -1
 candidates = 0
